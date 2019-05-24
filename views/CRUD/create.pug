@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    .col-sm-9#form
+        h4(style="text-align:center; color:white;") Formulario para crear una persona
+        br
+        .card
+            .card-body
+                form(method="POST", action="/Crud/Create" )
+                    .row
+                        .col-sm-4
+                            label Nombre
+                            br
+                            input(type="text", name="nombre", id="nombre", class="form-control")
+                        .col-sm-4
+                            label Apellido
+                            br
+                            input(type="text", name="apellido", id="apellido", class="form-control")
+                        .col-sm-4
+                            label Cedula
+                            br
+                            input(type="text", name="cedula", id="cedula", class="form-control")
+                        .col-sm-4
+                            label Telefono
+                            br
+                            input(type="text", name="telefono", id="telefono", class="form-control")
+                        .col-sm-4
+                            label Email
+                            br
+                            input(type="text", name="email", id="email", class="form-control")
+                        .col-sm-4
+                            label Direccion
+                            br
+                            input(type="text", name="direccion", id="direccion", class="form-control")
+                        .col-sm-4
+                            label Edad
+                            br
+                            input(type="number", name="edad", id="edad", class="form-control")
+                    br
+                    button.btn.btn-primary.btn-lg(type="submit", style="position:relative; left:45%;" ) Guardar
+
+
+
+

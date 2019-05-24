@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .row#crud
+        div(class="col-sm-3", id="Create")
+            h1 
+                strong Create
+            br
+            a.btn.btn-primary.btn-lg(href="/Create", id="buttons") CREATE
+        div(class="col-sm-3", id="Read")
+            h1
+                strong Read
+            br
+            a.btn.btn-primary.btn-lg(href="/Read", id="buttons") READ
+        div(class="col-sm-3", id="Update")
+            h1
+                strong Update
+            br
+            a.btn.btn-primary.btn-lg(href="/Update", id="buttons") UPDATE
+        div(class="col-sm-3", id="Delete")
+            h1 
+                strong Delete
+            br
+            a.btn.btn-primary.btn-lg(href="/Delete", id="buttons") Delete
+
+

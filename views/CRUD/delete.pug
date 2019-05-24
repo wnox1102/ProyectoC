@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    .col-sm-9#form
+        h3#text(style="text-align:center;color:white;") Formulario para eliminar una persona
+        hr
+        br
+        .card
+            .card-body
+                form(method="POST", action="/Crud/Delete" )
+                    .row
+                        .col-sm-3
+                            label Nombre
+                            br
+                            input(type="text", name="nombre", id="nombre", class="form-control")
+                        .col-sm-3
+                            label Apellido
+                            br
+                            input(type="text", name="apellido", id="apellido", class="form-control")
+                        .col-sm-3
+                            label Edad
+                            br
+                            input(type="number", name="edad", id="edad", class="form-control")
+                        .col-sm-3
+                            label Cedula
+                            br
+                            input(type="text", name="cedula", id="cedula", class="form-control")
+                    br
+                    button.btn.btn-primary.btn-lg(type="submit", style="position:relative; left:45%;" ) Eliminar

@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    .col-sm-8#table
+        h3#text Tabla en las que se muestran todas las personas
+        hr
+        br
+        table.table.bg-white
+            thead
+                tr(style="text-align:center;")
+                  th(scope='col') Id
+                  th(scope='col') Nombre
+                  th(scope='col') Apellido
+                  th(scope='col') Cedula
+                  th(scope='col') Telefono
+                  th(scope='col') Email
+                  th(scope='col') Direccion
+                  th(scope='col') Edad
+            tbody
+            -for(let i = 0; i <persona.length; i++)
+                tr(style="text-align:center;")
+                    th(scope='row')
+                        h5 #{persona[i].id}
+                    td
+                        h5 #{persona[i].nombre}
+                    td 
+                        h5 #{persona[i].apellido}
+                    td
+                        h5 #{persona[i].cedula}
+                    td
+                        h5 #{persona[i].telefono}
+                    td
+                        h5 #{persona[i].email}
+                    td
+                        h5 #{persona[i].direccion}
+                    td
+                        h5 #{persona[i].edad}
