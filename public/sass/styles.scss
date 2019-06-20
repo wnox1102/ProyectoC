@@ -10,52 +10,11 @@ $grey: #5f5f5f;
 * {
   font-family: $font;
 }
-
-body{
-    background-color: black;
-}
-
-h1{
-    color:white;
-}
-hr{
-    background-color: white;
-}
-
-
-
-#crud{
-    align-items: center;
-    position: relative;
-    left:8%;
-    top: 300px;
-}
-
-#titulo{
-    color:white;
-
-}
-
-#table{
-    position: relative;
-    left: 20%;
-    top:200px;
-}
-
-#text{
+#title{
     text-align: center;
-    color:white;
-
 }
 
-#buttons{
-    position: relative;
-    left: 3%;
-}
+#profileImg{
+    
 
-#form{
-    position: relative;
-    left: 10%;
-    top: 140px;
-    align-content: center;
 }

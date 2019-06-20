@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    .section
+      .container
+        .row.justify-content-between
+          .col-md-6
+            .row.justify-content-between.align-items-center
+              #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                ol.carousel-indicators
+                  li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                  li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                  li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                .carousel-inner(role='listbox')
+                  .carousel-item.active
+                    img.d-block(src='../assets/img/denys.jpg' alt='First slide')
+                    .carousel-caption.d-none.d-md-block
+                      h5 Big City Life, United States
+                  .carousel-item
+                    img.d-block(src='../assets/img/fabien-bazanegue.jpg' alt='Second slide')
+                    .carousel-caption.d-none.d-md-block
+                      h5 Somewhere Beyond, United States
+                  .carousel-item
+                    img.d-block(src='../assets/img/mark-finn.jpg' alt='Third slide')
+                    .carousel-caption.d-none.d-md-block
+                      h5 Stocks, United States
+                a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+                  i.tim-icons.icon-minimal-left
+                a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+                  i.tim-icons.icon-minimal-right
+          .col-md-5
+            h1.profile-title.text-left Projects
+            h5.text-on-back 01
+            p.profile-description.text-left
+              | An artist of considerable range, Ryan &mdash; the name taken by Melbourne-raised, Brooklyn-based Nick Murphy &mdash; writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.
+            .btn-wrapper.pt-3
+              button.btn.btn-simple.btn-primary(href='javascript:void(0)')
+                i.tim-icons.icon-book-bookmark
+                |  Bookmark
+              button.btn.btn-simple.btn-info(href='javascript:void(0)')
+                i.tim-icons.icon-bulb-63
+                |  Check it!

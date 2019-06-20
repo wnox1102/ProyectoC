@@ -4,10 +4,19 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous", defer)
+    meta(name='google-signin-scope' content='profile email')
+    meta(name='google-signin-client_id' content='YOUR_CLIENT_ID.apps.googleusercontent.com')
+    script(src='https://apis.google.com/js/platform.js' async='' defer='')
+    // Fonts
+    link(href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800', rel='stylesheet')
+    // Icons
+    link(href='https://use.fontawesome.com/releases/v5.0.6/css/all.css', rel='stylesheet')
+    // Theme CSS
+    link(type='text/css', href='/assets/css/blk-design-system.min.css', rel='stylesheet')
     link(rel="stylesheet", href="./dist/main.css")
-    title #{title} | #{h.siteTitle}
-  body
+    link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css')
+  title #{title} | #{h.siteTitle}
+  body(class='index-page')
     // Header
   block header
     include mixins/_navbar
@@ -23,3 +32,5 @@ html(lang="en")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js", integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49", crossorigin="anonymous", defer)
   script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js", integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy", crossorigin="anonymous", defer)
   script(src="./dist/main.bundle.js", defer)
+  // Theme JS
+  script(src='/assets/js/blk-design-system.min.js')
